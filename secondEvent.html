@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Event</title>
+</head>
+<body>
+    <h1>This is second event</h1>
+    <button id="bg-red">Click Me</button>
+    <button id="second">Click Me</button>
+    <button id="bg-changes">Click Me for change Background color</button>
+    <button id="bg-white">Turn Into White again</button>
+    <button id="bg-yellow">Click me for yellow</button>
+
+    <script>
+ function blueBackground() {
+     document.body.style.backgroundColor = "blue";
+ }
+ const blue = document.getElementById("second");
+ blue.onmouseover = function() {
+     blueBackground();
+     console.log("Clicked blue background")
+ }
+       function backgroundChange(){
+        document.body.style.backgroundColor = "green";
+       }
+       const thirdBtn = document.getElementById("bg-changes");
+       thirdBtn.onclick = backgroundChange;
+
+       function whiteBackground() {
+           document.body.style.backgroundColor = "white";
+       }
+       const whiteBtn = document.getElementById("bg-white");
+       whiteBtn.onclick = whiteBackground;
+
+       function yellowBackground(){
+           document.body.style.backgroundColor = "yellow";
+       }
+       const yellow = document.getElementById("bg-yellow");
+       yellow.onclick = yellowBackground;
+
+       function redBackground(){
+           document.body.style.backgroundColor = "red";
+       }
+       const red = document.getElementById("bg-red");
+       red.onmouseover = redBackground;
+    </script>
+</body>
+</html>

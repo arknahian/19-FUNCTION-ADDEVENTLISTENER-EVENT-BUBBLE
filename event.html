@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Company</title>
+</head>
+<body>
+    <h1 onclick="console.log('clicked');">Exploring Events</h1>
+    <button onclick="alert('programming hero')">Click here</button>
+    <h1 onclick="handleClick();">This one is handle by function</h1>
+    <h1 onclick="todayDate();">click here for know today's date</h1>
+    <h1 onmousemove="hoverOver();">Hover me</h1>
+    <h1 onmousewheel="mouseWheel();">This will be mouseWheel</h1>
+    <h1 onmouseover="mouseOver();">This will be mouse</h1>
+    <h1 onmouseout="mouseOut();">This is mouseout</h1>
+    <script>
+        function handleClick(){
+            console.log("someone clicked")
+        }
+        function todayDate(){
+            console.log(new Date());
+        }
+        function hoverOver(){
+            console.log("something over me")
+        }
+        function mouseWheel() {
+           console.log("somebody scrolled") 
+        }
+        function mouseOver(){
+            console.log("Some one over the mouse")
+        }
+        function mouseOut(){
+            console.log("someone mouse out from me")
+        }
+    </script>
+</body>
+</html>

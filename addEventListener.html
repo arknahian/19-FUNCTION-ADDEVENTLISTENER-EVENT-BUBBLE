@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Event Listener</title>
+</head>
+<body>
+    <h1>This is a heading.</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, in.</p>
+    <button>click me1</button>
+    <button id="txt-blue">click me2</button>
+    <button id="bg-tomato">click me3</button>
+    <script>
+        const tomato = document.getElementById("bg-tomato");
+        tomato.addEventListener("click", function(){
+            document.body.style.backgroundColor = "tomato";
+        })
+        const blue = document.getElementById("txt-blue");
+        blue.addEventListener("click", function(){
+            document.body.style.color = "blue";
+        })
+    </script>
+</body>
+</html>
